@@ -3,13 +3,18 @@
     <head>
         <title> Leasing Your Bike </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>LEASE YOUR BIKE</h1>
-                    <p>Follow the prompts and see how much profit you could be generating!</p>
+                    <div class= "list-inline">
+                        <li><h1>LEASE YOUR BIKE</h1></li>
+                        <li><p>Follow the prompts and see how much profit you could be generating!</p></li>
+                        </div>
                     </div>
                 </div>
             <div class="row">
@@ -22,7 +27,7 @@
                                 </div>
                         <div class="form-group">
                             <label for="bikeType">Bike Type</label>
-                            <select class="custom-select col-md-6" required>
+                            <select class="form-control" required>
                                 <option value="">Type of bike</option>
                                 <option value="1">Cargo</option>
                                 <option value="2">Children's</option>
@@ -60,8 +65,20 @@
                                 <option value="13">7' or more</option>
                                 </select>
                             </div>
+                        <div class="col-xs-3 col-sm-2-4 col-md-3 col-lg0204 no-padding text-center">
+                            <div class="form-group">
+                                <input type="checkbox" name-"ride[extras][]" id="ride_extras_lock" value="Lock" class="icon-circle-border-input">
+                                    <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_lock">
+                                        </label>
+                                    <span class="truncate">Lock</span>
+                                    </div>
+                            </div>
+                        
                         <label for="inputCost">Cost to Rent</label>
-                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="?">
+                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Recommended prices:
+                            $5 per hour
+                            $20 per day
+                            $70 per week">
                             ?
                         </button>
                         <div class="form-row">
@@ -163,7 +180,11 @@
                     </div>
                 </div>
             </div>
-        <script src="/assets/js/vendor/popper.min.js"></script>
-        <script src="/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                              $('[data-toggle="tooltip"]').tooltip();
+                              });
+            </script>
         </body>
 </html>
