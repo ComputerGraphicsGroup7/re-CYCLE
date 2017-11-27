@@ -9,174 +9,213 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class= "list-inline">
-                        <li><h1>LEASE YOUR BIKE</h1></li>
-                        <li><p>Follow the prompts and see how much profit you could be generating!</p></li>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class= "list-inline">
+                            <li><h1>LEASE YOUR BIKE</h1></li>
+                            <li><p>Follow the prompts and see how much profit you could be generating!</p></li>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <div class="row">
-                <div class="col-8">
-                    <form class="was-validated">
-                        <!-- all the stuff that needs to be inputted for the form to be submitted successfully -->
-                        <div class="form-group">
-                            <label for="inputBikeName">Bike Name</label>
-                            <input type="text" class="form-control" id="inputBikeName" placeholder ="Enter the name of your bike" required>
-                                </div>
-                        <div class="form-group">
-                            <label for="bikeType">Bike Type</label>
-                            <select class="form-control" required>
-                                <option value="">Type of bike</option>
-                                <option value="1">Cargo</option>
-                                <option value="2">Children's</option>
-                                <option value="3">Cruiser</option>
-                                <option value="4">Folding</option>
-                                <option value="5">Mountain</option>
-                                <option value="6">Road</option>
-                                <option value="7">Other</option>
-                                </select>
-                            </div>
-                        <div class="form-group">
-                            <label for="file">Attach a picture of the bike</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
-                                </div>
-                        <div class="form-group">
-                            <label for="description">Description of Bike</label>
-                            <textarea class = "form-control" id="description" rows="3" placeholder="Add a short description of your bike" required></textarea>
-                            </div>
-                        <div class="form-group">
-                            <label for="riderHeight">Bike Rider Height</label>
-                            <select id="height" class="form-control" required>
-                                <option value="">Select a height...</option>
-                                <option value="1">4' or less</option>
-                                <option value="2">4'3"</option>
-                                <option value="3">4'6"</option>
-                                <option value="4">4'9"</option>
-                                <option value="5">5'</option>
-                                <option value="6">5'3"</option>
-                                <option value="7">5'6"</option>
-                                <option value="8">5'9"</option>
-                                <option value="9">6'</option>
-                                <option value="10">6'3"</option>
-                                <option value="11">6'6"</option>
-                                <option value="12">6'9"</option>
-                                <option value="13">7' or more</option>
-                                </select>
-                            </div>
-                        <div class="col-xs-3 col-sm-2-4 col-md-3 col-lg0204 no-padding text-center">
+                <div class="row">
+                    <div class="col-8">
+                        <form class="was-validated">
+                            <!-- all the stuff that needs to be inputted for the form to be submitted successfully -->
                             <div class="form-group">
-                                <input type="checkbox" name-"ride[extras][]" id="ride_extras_lock" value="Lock" class="icon-circle-border-input">
-                                    <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_lock">
-                                        </label>
-                                    <span class="truncate">Lock</span>
+                                <label for="inputBikeName">Bike Name</label>
+                                <input type="text" class="form-control" id="inputBikeName" placeholder ="Enter the name of your bike" required>
                                     </div>
-                            </div>
-                        
-                        <label for="inputCost">Cost to Rent</label>
-                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Recommended prices:
-                            $5 per hour
-                            $20 per day
-                            $70 per week">
-                            ?
-                        </button>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="inputHourCost">per hour</label>
-                                <input type="hourCost" class="form-control" id="inputHourCost" placeholder="cost (in dollars)" required>
-                                    </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputHourCost">per day</label>
-                                <input type="dayCost" class="form-control" id="inputDayCost" placeholder="cost (in dollars)" required>
-                                    </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputDayCost">per week</label>
-                                <input type="weekCost" class="form-control" id="inputWeekCost" placeholder="cost (in dollars)" required>
-                                    </div>
-                            </div>
-                        <div class="form-group col-md-">
-                            <label for="inputAddress">Address Line 1</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
-                                </div>
-                        <div class="form-group col-md-">
-                            <label for="inputAddress2">Address Line 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
-                                </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" required>
-                                    </div>
-                            <div class="form-group col-md-3">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control" required>
-                                    <option value="">Choose...</option>
-                                    <option value="1">Alabama</option>
-                                    <option value="2">Alaska</option>
-                                    <option value="3">Arizona</option>
-                                    <option value="4">Arkansas</option>
-                                    <option value="5">California</option>
-                                    <option value="6">Colorado</option>
-                                    <option value="7">Connecticut</option>
-                                    <option value="8">Delaware</option>
-                                    <option value="9">Florida</option>
-                                    <option value="10">Georgia</option>
-                                    <option value="11">Hawaii</option>
-                                    <option value="12">Idaho</option>
-                                    <option value="13">Illinois</option>
-                                    <option value="14">Indiana</option>
-                                    <option value="15">Iowa</option>
-                                    <option value="16">Kansas</option>
-                                    <option value="17">Kentucky</option>
-                                    <option value="18">Louisiana</option>
-                                    <option value="19">Maine</option>
-                                    <option value="20">Maryland</option>
-                                    <option value="21">Massachusetts</option>
-                                    <option value="22">Michigan</option>
-                                    <option value="23">Minnesota</option>
-                                    <option value="24">Mississippi</option>
-                                    <option value="25">Missouri</option>
-                                    <option value="26">Montana</option>
-                                    <option value="27">Nebraska</option>
-                                    <option value="28">Nevada</option>
-                                    <option value="29">New Hampshire</option>
-                                    <option value="30">New Jersey</option>
-                                    <option value="31">New Mexico</option>
-                                    <option value="32">New York</option>
-                                    <option value="33">North Carolina</option>
-                                    <option value="34">North Dakota</option>
-                                    <option value="35">Ohio</option>
-                                    <option value="36">Oklahoma</option>
-                                    <option value="37">Oregon</option>
-                                    <option value="38">Pennsylvania</option>
-                                    <option value="39">Rhode Island</option>
-                                    <option value="40">South Carolina</option>
-                                    <option value="41">South Dakota</option>
-                                    <option value="42">Tennessee</option>
-                                    <option value="43">Texas</option>
-                                    <option value="44">Utah</option>
-                                    <option value="45">Vermont</option>
-                                    <option value="46">Virginia</option>
-                                    <option value="47">Washington</option>
-                                    <option value="48">West Virginia</option>
-                                    <option value="49">Wisconsin</option>
-                                    <option value="50">Wyoming</option>
+                            <div class="form-group">
+                                <label for="bikeType">Bike Type</label>
+                                <select class="form-control" required>
+                                    <option value="">Type of bike</option>
+                                    <option value="1">Cargo</option>
+                                    <option value="2">Children's</option>
+                                    <option value="3">Cruiser</option>
+                                    <option value="4">Folding</option>
+                                    <option value="5">Mountain</option>
+                                    <option value="6">Road</option>
+                                    <option value="7">Other</option>
                                     </select>
                                 </div>
-                            <div class="form-group col-md-3">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip" required>
+                            <div class="form-group">
+                                <label for="file">Attach a picture of the bike</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
                                     </div>
+                            <div class="form-group">
+                                <label for="description">Description of Bike</label>
+                                <textarea class = "form-control" id="description" rows="3" placeholder="Add a short description of your bike" required></textarea>
+                                </div>
+                            <div class="form-group">
+                                <label for="riderHeight">Bike Rider Height</label>
+                                <select id="height" class="form-control" required>
+                                    <option value="">Select a height...</option>
+                                    <option value="1">4' or less</option>
+                                    <option value="2">4'3"</option>
+                                    <option value="3">4'6"</option>
+                                    <option value="4">4'9"</option>
+                                    <option value="5">5'</option>
+                                    <option value="6">5'3"</option>
+                                    <option value="7">5'6"</option>
+                                    <option value="8">5'9"</option>
+                                    <option value="9">6'</option>
+                                    <option value="10">6'3"</option>
+                                    <option value="11">6'6"</option>
+                                    <option value="12">6'9"</option>
+                                    <option value="13">7' or more</option>
+                                    </select>
+                                </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                                <div class="form-group">
+                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_lock" value="Lock" class="icon-circle-border-input">
+                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_lock">
+                                            </label>
+                                        <span class="truncate">Lock</span>
+                                        </div>
+                                </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                                <div class="form-group">
+                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_helmet" value="Helmet" class="icon-circle-border-input">
+                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_helmet">
+                                        </label>
+                                        <span class="truncate">Helmet</span>
+                                        </div>
                             </div>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" required>
-                                <span class="custom-control-indicator"></span>
-                                <span class="custom-control-description">Check this custom checkbox</span>
-                                </label>
-                        <button type="submit" class="btn btn-primary">Lease Your Bike!</button>
-                        
-                    </form>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                                <div class="form-group">
+                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_lights" value="Lights" class="icon-circle-border-input">
+                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_lights">
+                                        </label>
+                                        <span class="truncate">Lights</span>
+                                        </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                                <div class="form-group">
+                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_bell" value="Bell" class="icon-circle-border-input">
+                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_bell">
+                                        </label>
+                                        <span class="truncate">Bell</span>
+                                        </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                                <div class="form-group">
+                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_reflectors" value="Reflectors" class="icon-circle-border-input">
+                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_reflectors">
+                                        </label>
+                                        <span class="truncate">Reflectors</span>
+                                        </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                                <div class="form-group">
+                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_basket" value="Basket" class="icon-circle-border-input">
+                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_basket">
+                                        </label>
+                                        <span class="truncate">Basket</span>
+                                        </div>
+                            </div>
+                            <label for="inputCost">Cost to Rent</label>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Recommended prices:
+                                $5 per hour
+                                $20 per day
+                                $70 per week">?</button>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="inputHourCost">per hour</label>
+                                    <input type="hourCost" class="form-control" id="inputHourCost" placeholder="cost (in dollars)" required>
+                                        </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputHourCost">per day</label>
+                                    <input type="dayCost" class="form-control" id="inputDayCost" placeholder="cost (in dollars)" required>
+                                        </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputDayCost">per week</label>
+                                    <input type="weekCost" class="form-control" id="inputWeekCost" placeholder="cost (in dollars)" required>
+                                        </div>
+                                </div>
+                            <div class="form-group col-md-">
+                                <label for="inputAddress">Address Line 1</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                                    </div>
+                            <div class="form-group col-md-">
+                                <label for="inputAddress2">Address Line 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+                                    </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" required>
+                                        </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control" required>
+                                        <option value="">Choose...</option>
+                                        <option value="1">Alabama</option>
+                                        <option value="2">Alaska</option>
+                                        <option value="3">Arizona</option>
+                                        <option value="4">Arkansas</option>
+                                        <option value="5">California</option>
+                                        <option value="6">Colorado</option>
+                                        <option value="7">Connecticut</option>
+                                        <option value="8">Delaware</option>
+                                        <option value="9">Florida</option>
+                                        <option value="10">Georgia</option>
+                                        <option value="11">Hawaii</option>
+                                        <option value="12">Idaho</option>
+                                        <option value="13">Illinois</option>
+                                        <option value="14">Indiana</option>
+                                        <option value="15">Iowa</option>
+                                        <option value="16">Kansas</option>
+                                        <option value="17">Kentucky</option>
+                                        <option value="18">Louisiana</option>
+                                        <option value="19">Maine</option>
+                                        <option value="20">Maryland</option>
+                                        <option value="21">Massachusetts</option>
+                                        <option value="22">Michigan</option>
+                                        <option value="23">Minnesota</option>
+                                        <option value="24">Mississippi</option>
+                                        <option value="25">Missouri</option>
+                                        <option value="26">Montana</option>
+                                        <option value="27">Nebraska</option>
+                                        <option value="28">Nevada</option>
+                                        <option value="29">New Hampshire</option>
+                                        <option value="30">New Jersey</option>
+                                        <option value="31">New Mexico</option>
+                                        <option value="32">New York</option>
+                                        <option value="33">North Carolina</option>
+                                        <option value="34">North Dakota</option>
+                                        <option value="35">Ohio</option>
+                                        <option value="36">Oklahoma</option>
+                                        <option value="37">Oregon</option>
+                                        <option value="38">Pennsylvania</option>
+                                        <option value="39">Rhode Island</option>
+                                        <option value="40">South Carolina</option>
+                                        <option value="41">South Dakota</option>
+                                        <option value="42">Tennessee</option>
+                                        <option value="43">Texas</option>
+                                        <option value="44">Utah</option>
+                                        <option value="45">Vermont</option>
+                                        <option value="46">Virginia</option>
+                                        <option value="47">Washington</option>
+                                        <option value="48">West Virginia</option>
+                                        <option value="49">Wisconsin</option>
+                                        <option value="50">Wyoming</option>
+                                        </select>
+                                    </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip" required>
+                                        </div>
+                                </div>
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" required>
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Check this custom checkbox</span>
+                                    </label>
+                            <button type="submit" class="btn btn-primary">Lease Your Bike!</button>
+                            
+                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
