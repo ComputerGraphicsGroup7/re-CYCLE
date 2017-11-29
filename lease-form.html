@@ -7,6 +7,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
+            .modal-header, h4, .close {
+                background-color: #5cb85c;
+                color:white !important;
+                text-align: center;
+                font-size: 30px;
+            }
+            .modal-footer {
+                background-color: #f9f9f9;
+            }
+            @media (max-width: 1000px) {
+                #leftSide {
+                    display: none;
+                }
+            }
             .button1 {border-radius:50%;}
             .icon-circle-border-input{
                 border-radius:50%;
@@ -15,13 +29,34 @@
             </style>
     </head>
     <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">LOGO</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right list-inline">
+                        <li><a class= "navbar-brand" href="test.html">About</a></li>
+                        <li><a class= "navbar-brand" href="lease-form.html">Owner</a></li>
+                        <li><a class= "navbar-brand"><span id="myBtn">Sign in</span></a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
         <div class="container">
             <div class="col">
                 <div class="row">
                     <div class="col">
                         <div class= "list-inline">
                             <li><h1>LEASE YOUR BIKE</h1></li>
-                            <li><p>Follow the prompts and see how much profit you could be generating!</p></li>
+                            <li><h5>Follow the prompts and see how much profit you could be generating!</h5></li>
                             </div>
                         </div>
                     </div>
@@ -213,11 +248,30 @@
                                     <input type="text" class="form-control" id="inputZip" required>
                                         </div>
                                 </div>
-                            <label class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" required>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Check this custom checkbox</span>
-                                    </label>
+                            <div>
+                                <div class="list-inline">
+                                <li><h3>Willing to Deliver?</h3></li>
+                                <li><p>You can always decline to deliver</p></li>
+                                <div class="custom-controls-stacked d-block my-3">
+                                    <label class="custom-control custom-radio">
+                                        <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">No</span>
+                                            </label>
+                                    <label class="custom-control custom-radio">
+                                        <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Yes, if I am available and it is close in proximity</span>
+                                            </label>
+                                    </div>
+                                </div>
+                            <div>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" required>
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">I agree to the Terms and Conditions</span>
+                                        </label>
+                                </div>
                             <button type="submit" class="btn btn-primary">Lease Your Bike!</button>
                             
                         </form>
