@@ -2,6 +2,7 @@
 <html>
     <head>
         <title> Leasing Your Bike </title>
+        <link href="bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -276,6 +277,17 @@
             $(document).ready(function(){
                               $('[data-toggle="tooltip"]').tooltip();
                               });
+                              
+            $(document).ready(function(){
+                              $("#myBtn").click(function(){
+                              $("#myModal").modal();
+                              });
+            });
             </script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap.min.js"></script>
+        
         </body>
 </html>
