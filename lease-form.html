@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .button1 {border-radius:50%;}
+            .icon-circle-border-input{
+                border-radius:50%;
+                
+            }
+            </style>
     </head>
     <body>
         <div class="container">
@@ -114,11 +121,10 @@
                                         <span class="truncate">Basket</span>
                                         </div>
                             </div>
-                            <label for="inputCost">Cost to Rent</label>
-                            <button type="button" class="btn btn-secondary btn-circle" data-toggle="tooltip" data-placement="right" title="Recommended prices:
-                                $5 per hour
-                                $20 per day
-                                $70 per week">?</button>
+                            <div>
+                                <label for="inputCost">Cost to Rent</label>
+                                <button type="button" class="btn btn-secondary button1" data-toggle="tooltip" data-placement="right" title="Recommended prices: $5 per hour, $20 per day, $70 per week">?</button>
+                                </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="inputHourCost">per hour</label>
