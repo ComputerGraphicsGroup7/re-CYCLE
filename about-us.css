@@ -3,7 +3,7 @@ div {
 }
 
 .row h2 {
-	color:#68a800;
+	color:rgb(88, 143, 39);
 }
 
 .row p{
@@ -19,7 +19,7 @@ div {
 }
 
 .main-picture {
-	background-image: url('https://www.ordnancesurvey.co.uk/blog/wp-content/uploads/2014/06/Fotolia_64800996_I.jpg');
+	background-image: "testImage2.jpg";
 	background-position: center;
 	background-size: cover;
 	padding: 20px;
