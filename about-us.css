@@ -1,0 +1,49 @@
+div {
+	text-align: center;
+}
+
+.row h2 {
+	color:#68a800;
+}
+
+.row p{
+	font-size: 20px;
+}
+
+.col-3 img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.main-picture {
+	background-image: url('https://www.ordnancesurvey.co.uk/blog/wp-content/uploads/2014/06/Fotolia_64800996_I.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 20px;
+	text-align: center;
+}
+
+.main-picture p {
+	color: white;
+	font-size: 40px;
+}
+
+.main-picture h1{
+	font-size: 100px;
+}
+
+.button {
+	background-color: #D3D3D3;
+	display: inline-block;
+	font-size: 20px;
+	width: 25%;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.button:hover {
+	background-color: #808080;
+}
