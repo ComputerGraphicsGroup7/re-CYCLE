@@ -34,14 +34,17 @@
                 font-family: "Raleway";
                 font-size: 16px;
             }
-            .col-md-4, .col-md-6, .col-md-2{
+            .col-md-4, .col-md-6, .col-md-2, .col-xs-4{
                 padding-right: 10px;
                 padding-left: 10px;
             }
             .list-inline{
-                margin-left: 5px;
+                margin-left: 10px;
             }
             .button2
+            .h1 {
+                color: rgb(88,143,39);
+            }
             
             </style>
     </head>
@@ -75,7 +78,7 @@
             <div class="row">
                 <div class="col">
                     <div class= "list-inline">
-                        <li><h1>LEASE YOUR BIKE</h1></li>
+                        <li><h1 class="text-success">LEASE YOUR BIKE</h1></li>
                         <li><h5>Follow the prompts and see how much profit you could be generating!</h5></li>
                         </div>
                     </div>
@@ -182,15 +185,15 @@
                                 <button type="button" class="btn btn-secondary button1" data-toggle="tooltip" data-placement="right" title="Recommended prices: $5 per hour, $20 per day, $70 per week">?</button>
                                 </div>
                             <div class="form-row">
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-xs-4">
                                     <label for="inputHourCost">per hour</label>
                                     <input type="hourCost" class="form-control" id="inputHourCost" placeholder="cost (in dollars)" required>
                                         </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-xs-4">
                                     <label for="inputHourCost">per day</label>
                                     <input type="dayCost" class="form-control" id="inputDayCost" placeholder="cost (in dollars)" required>
                                         </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-xs-4">
                                     <label for="inputDayCost">per week</label>
                                     <input type="weekCost" class="form-control" id="inputWeekCost" placeholder="cost (in dollars)" required>
                                         </div>
