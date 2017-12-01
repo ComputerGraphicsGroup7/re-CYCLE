@@ -10,7 +10,16 @@ div {
 	font-size: 20px;
 }
 
-.col-md-3 img {
+.picture-1 img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+
+.picture-2 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
