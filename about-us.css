@@ -10,12 +10,13 @@ div {
 	font-size: 20px;
 }
 
-.col-3 img {
+.col-md-3 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 	padding-top: 40px;
 	padding-bottom: 30px;
+	margin:auto;
 }
 
 .main-picture {
