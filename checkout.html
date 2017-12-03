@@ -41,7 +41,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">LOGO</a>
+                    <a class="navbar-brand" href="index.html"><img class="img-square" src="bike.png" width="60" height="25"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -56,27 +56,118 @@
             <br>
             <br>
             <br>
-            <h1>Search Bar Here</h1>
+            <h1>BIKE CHECKOUT</h1>
             <h2>Back to results link here</h2>
-        </div>
         <div class="row">
+            <div class="col-md-6">
+                <form class="was-validated">
+                    <h2>Title of Bike</h2>
+                    <h3>From: [Owner username]</h3>
+                    <h5>I would like to rent the bike for...</h5>
+                    <div class="form group col-sm-4 list-inline">
+                        <li><input type="number" class="form-control" id="numHours" placeholder="0"></li>
+                        <li>hours   x   $5      =</li>
+                        <li><p id="hourRent"></p></li>
+                        </div>
+                    <br>
+                    <div class="form group col-sm-4 list-inline">
+                        <li><input type="number" class="form-control" id="numDays" placeholder="0"></li>
+                        <li>days    x   $20     =</li>
+                        <li><p id="dayRent"></p></li>
+                        </div>
+                    <br>
+                    <div class="form group col-sm-4 list-inline">
+                        <li><input type="number" class="form-control" id="numWeeks" placeholder="0"></li>
+                        <li>weeks   x   $70     =</li>
+                        <li><p id="weekRent"></p></li>
+                        </div>
+                    <br>
+                    <button onclick="subtotal1()">Rent Subtotal</button>
+                    <p id = "sub1" align="right"></p>
+                    
+                    
+                    
+                    <h3>Any Accesories?</h3>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                        <div class="form-group">
+                            <input type="checkbox" name-"ride[extras][]" id="ride_extras_lock" value="Lock" class="icon-circle-border-input">
+                                <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_lock">
+                                </label>
+                                <span class="truncate">Lock</span>
+                                </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                        <div class="form-group">
+                            <input type="checkbox" name-"ride[extras][]" id="ride_extras_helmet" value="Helmet" class="icon-circle-border-input">
+                                <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_helmet">
+                                </label>
+                                <span class="truncate">Helmet</span>
+                                </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                        <div class="form-group">
+                            <input type="checkbox" name-"ride[extras][]" id="ride_extras_lights" value="Lights" class="icon-circle-border-input">
+                                <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_lights">
+                                </label>
+                                <span class="truncate">Lights</span>
+                                </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                        <div class="form-group">
+                            <input type="checkbox" name-"ride[extras][]" id="ride_extras_bell" value="Bell" class="icon-circle-border-input">
+                                <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_bell">
+                                </label>
+                                <span class="truncate">Bell</span>
+                                </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                        <div class="form-group">
+                            <input type="checkbox" name-"ride[extras][]" id="ride_extras_reflectors" value="Reflectors" class="icon-circle-border-input">
+                                <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_reflectors">
+                                </label>
+                                <span class="truncate">Reflectors</span>
+                                </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
+                        <div class="form-group">
+                            <input type="checkbox" name-"ride[extras][]" id="ride_extras_basket" value="Basket" class="icon-circle-border-input">
+                                <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_basket">
+                                </label>
+                                <span class="truncate">Basket</span>
+                                </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    </form>
+                    </div>
+                    
+                </div>
             <div class="col-md-6">
                 <img class="img-square" src="bike2.jpg" alt="bikeImage" width="600" height="400">
                     
-                    <h3 align="center">Approximate Location of the Bike</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d64885.479419247284!2d-122.00739420545456!3d37.372112678589964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1512228503697" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    
-                    
-                    </div>
-            <div class="col-md-6">
-                
-                
                 
             </div>
         </div>
         
         
         <script>
+            function subtotal1(){
+                var h = document.getElementById("numHours").value;
+                var d = document.getElementById("numDays").value;
+                var w = document.getElementById("numWeeks").value;
+                var hC = h*5;
+                var dC = d*20;
+                var wC = w*70;
+                document.getElementById("hourRent").innerHTML = hC;
+                document.getElementById("dayRent").innerHTML = dC;
+                document.getElementById("weekRent").innerHTML = wC;
+                document.getElementById("sub1").innerHTML = hC + dC + wC;
+            }
+        
+            
+            
             $(document).ready(function(){
                               $("#myBtn").click(function(){
                                                 $("#myModal").modal();
