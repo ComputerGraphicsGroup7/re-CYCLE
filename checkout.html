@@ -122,7 +122,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies tellus diam, quis cursus enim consequat et. Integer dapibus enim id lectus iaculis, at dapibus arcu hendrerit. Proin non bibendum mi, quis tempor urna. In et tincidunt leo, sit amet feugiat lorem. Etiam in aliquet odio, id accumsan ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at egestas leo.</p>
                     
                     <h2>Grand Total</h2>
-                    <p align="right" id="total"></p>
+                    <p align="right" id="total" onchange="total()"></p>
                     </form>
                     </div>
             <div class="col-md-6">
@@ -153,14 +153,19 @@
             function subtotal2(){
                 var lock = document.getElementById("ride_extras_lock");
                 var helmet = document.getElementById("ride_extras_helmet");
-                if(lock.checked){subtot2 = 5;}
-                if(helmet.checked){subtot2+=8;}
+                var hYes = 0;
+                var lYes = 0;
+                if(lock.checked){lYes = 5;}
+                if(helmet.checked){hYes = 8;}
+                subtot2=lYes+hYes;
                 document.getElementById("sub2").innerHTML = subtot2;
             
             }
         
-            document.getElementById("total").innerHTML=subtot1+subtot2;
-            
+            function total(){
+                document.getElementById("total").innerHTML=subtot1+subtot2;
+            }
+        
             $(document).ready(function(){
                               $("#myBtn").click(function(){
                                                 $("#myModal").modal();
