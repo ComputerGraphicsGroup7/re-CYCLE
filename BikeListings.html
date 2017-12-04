@@ -10,29 +10,265 @@
                     
        <!-- Bootstrap CSS -->
        <link href="css/bootstrap.min.css" rel="stylesheet">
+           
+        <style>
+            
+            /*change input text fields to grey shade color*/
+            .form-control{
+                background-color: rgba(223,223,223,0.5);
+                color:#000;
+            }
+        
+            /* changes the print color to our green as user types in their information */
+             
+            input[type=text], select{
+                color: #588f27;
+            }
+  
+        
+            /*Changes the placedholder text to our green*/
+            input::-webkit-input-placeholder {
+                color: #588f27 !important;
+            }
+        
+            input:-moz-placeholder { /* Firefox 18- */
+                color: #588f27 !important;
+            }
+        
+            input::-moz-placeholder {  /* Firefox 19+ */
+                color: #588f27 !important;
+            }
+        
+            input:-ms-input-placeholder {
+                color: #588f27 !important;
+            }
+ 
+            /*The green color based on design*/
+           .btn{
+               background-color: #588f27
+           }
+        
+            .listings {
+                text-align: justify;
+            }
+        
+            div.gallery {
+                border: 2px solid #ccc;
+                padding-bottom: 3px;
+            }
+        
+            /*Allows outline around images when hovered over*/
+            div.gallery:hover {
+                border: 5px solid #588f27;
+            }
+        
+            div.gallery img {
+                
+                width: 100%;
+                height: auto;
+            }
+        
+/*
+            div.desc {
+                
+                padding: 15px;
+                text-align: center;
+            }
+            * {
+                box-sizing: border-box;
+            }
+*/
+        
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+        
+            @media only screen and (max-width: 700px){
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+        
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+        
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+        
     </head>
     
     <body>
         
-        <form class="form-inline" style="text-align:center">
-            <div class="form-group input-lg">
-                <label class="sr-only" for="CityOfInterest">Destination</label>
-                <input type="text" class="form-control" id="CityOfInterest" placeholder="City of Interest">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img class="img-square" src="bike.png" width="60" height="25"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class= "navbar-brand" href="about-us.html">About</a></li>
+                        <li><a class= "navbar-brand" href="lease-form.html">Owner</a></li>
+                        <li><a class= "navbar-brand"><span id="myBtn">Sign in</span></a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
-    
-            <div class="form-group input-lg">
-                <label class="sr-only" for="StartDate">Start Date</label>
-                <input type="email" class="form-control" id="startDate" placeholder="Start Date">
-                <label class="sr-only" for="End Date">End Date</label>
-                <input type="email" class="form-control" id="startDate" placeholder="End Date">
+        </nav>
+        
+        <br>
+        <br>
+        <br>
+
+        
+        <div class = "row">
+        <div class = "col-md-12">
+        <form role="form" >
+            <div class = "col-xs-6">
+                   <div class="form-group">
+                       <label class="sr-only" for="CityOfInterest">Destination</label>
+                       <input type="text" class="form-control" id="CityOfInterest" placeholder="City of Interest">
+                    </div>
             </div>
-            <button type="submit" class="btn btn-success">Search!</button>
-            
-            
+               <div class = "col-xs-2">
+                    <div class="form-group">
+                        <label class="sr-only" for="StartDate">Start Date</label>
+                        <input type="text" class="form-control" id="startDate" placeholder="Start Date">
+                   
+                    </div>
+                </div>
+                
+            <div class = "col-xs-2">
+                    <div class="form-group">
+                        <label class="sr-only" for="End Date">End Date</label>
+                        <input type="text" class="form-control" id="startDate" placeholder="End Date">
+                    </div>
+                </div>
+                
+            <div class = "col-xs-1">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Search!</button>
+                    </div>
+                </div>
+            </div>
         </form>
+        </div>
+        </div>
         
-        <img src="bikes.jpg" class="img-responsive" alt="Responsive image">
+
         
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_fjords.jpg">
+                    <img src="http://placehold.it/100x100" alt="Trolltunga Norway" width="300" height="200">
+                </a>
+            </div>
+        </div>
+            
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="http://placehold.it/100x100" alt="Forest" width="600" height="400">
+                </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="http://placehold.it/100x100" alt="Northern Lights" width="600" height="400">
+                </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                        </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+        </div>
+                
+        <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+                </div>
+        </div>
+        
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                </a>
+            </div>
+        </div>
+                        
+        <div class="responsive">
+            <div class="gallery">
+                    <a target="_blank" href="img_mountains.jpg">
+                        <img src="http://placehold.it/100x100" alt="Mountains" width="600" height="400">
+                    </a>
+            </div>
+        </div>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
