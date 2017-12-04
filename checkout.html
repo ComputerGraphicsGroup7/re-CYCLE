@@ -121,7 +121,8 @@
                     <h3>Insurance Disclaimer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies tellus diam, quis cursus enim consequat et. Integer dapibus enim id lectus iaculis, at dapibus arcu hendrerit. Proin non bibendum mi, quis tempor urna. In et tincidunt leo, sit amet feugiat lorem. Etiam in aliquet odio, id accumsan ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at egestas leo.</p>
                     
-                    <p align="right">Grand Total = $<output name="totalPrice" id="total"></output></p>
+                    <h2>Grand Total</h2>
+                    <p align="right" id="total"></p>
                     </form>
                     </div>
             <div class="col-md-6">
@@ -159,9 +160,7 @@
             
             }
         
-            function getTotal(){
-                document.getElementById("total").innerHTML=subtot1+subtot2;
-            }
+            document.getElementById("total").innerHTML=subtot1+subtot2;
             
             $(document).ready(function(){
                               $("#myBtn").click(function(){
