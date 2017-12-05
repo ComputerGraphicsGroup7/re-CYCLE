@@ -31,12 +31,16 @@
             hr{
                 border-top-color:rgb(88,143,39);
             }
-            .btn{
+            .btn, .btn-primary{
                 background-color:rgb(88,143,39);
                 border-color:rgb(88,143,39);
             }
             .btn:hover{
                 background-color:rgb(88,130,42);
+                border-color:rgb(88,143,39);
+            }
+            .btn:highlight{
+                background-color:rgb(88,143,39);
                 border-color:rgb(88,143,39);
             }
             </style>
@@ -67,7 +71,7 @@
             <br>
             <br>
             <br>
-            <h1><strong>BIKE CHECKOUT<strong></h1>
+            <h1><b>BIKE CHECKOUT</b></h1>
             <h2>Back to results link here</h2>
         <div class="row">
             <div class="col-md-6">
@@ -101,7 +105,7 @@
                     <br>
                     <hr width="80%" align="right">
                     <p id = "sub1" align="right"></p>
-                    <button type="button" onclick="subtotal1()">Rent Subtotal</button>
+                    <button type="button" onclick="subtotal1(); total();">Rent Subtotal</button>
                     
                     
                     <h3>Any Accesories?</h3>
@@ -123,14 +127,14 @@
                     </div>
                     <hr width="80%" align="right">
                     <p id = "sub2" align="right"></p>
-                    <button type="button" onclick="subtotal2()">Accessories Subtotal</button>
+                    <button type="button" onclick="subtotal2(); total();">Accessories Subtotal</button>
                     
                     <br>
                     <h3>Insurance Disclaimer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies tellus diam, quis cursus enim consequat et. Integer dapibus enim id lectus iaculis, at dapibus arcu hendrerit. Proin non bibendum mi, quis tempor urna. In et tincidunt leo, sit amet feugiat lorem. Etiam in aliquet odio, id accumsan ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at egestas leo.</p>
                     
                     <h2>Grand Total</h2>
-                    <p align="right" id="total" onchange="total()"></p>
+                    <p align="right" id="total"></p>
                     </form>
                     </div>
             <div class="col-md-6">
