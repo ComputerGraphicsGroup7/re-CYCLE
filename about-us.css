@@ -34,12 +34,6 @@ div {
 
 .main-picture h1{
 	font-size: 100px;
-	color: #588f27;
-	text-shadow:
-		-1px -1px 0 #e7e7e7,
-		1px -1px 0 #e7e7e7,
-		-1px 1px 0 #e7e7e7,
-		1px 1px 0 #e7e7e7;
 }
 
 .button {
