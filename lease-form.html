@@ -44,12 +44,16 @@
             .btn{
                 background-color:rgb(88,143,39);
                 border-color:rgb(88,143,39);
+                position:relative; center:0;
             }
             .btn:hover{
                 background-color:rgb(88,130,42);
                 border-color:rgb(88,143,39);
             }
-            
+            custom-control-input{
+                margin-left: 10px;
+            }
+
             </style>
     </head>
     <body>
@@ -183,14 +187,6 @@
                                         <span class="truncate">Basket</span>
                                         </div>
                                 </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
-                                <div class="form-group">
-                                    <input type="checkbox" name-"ride[extras][]" id="ride_extras_bottle" value="Bottle" class="icon-circle-border-input">
-                                        <label class="icon-circle-border icon-md-circle-border white" for="ride_extras_bottle">
-                                        </label>
-                                        <span class="truncate">Bottle</span>
-                                        </div>
-                            </div>
                             <div>
                                 <br>
                                 <label for="inputCost"><h3>Cost to Rent</h3></label>
@@ -289,26 +285,29 @@
                                 <div class="list-inline">
                                 <li><h3>Willing to Deliver?</h3></li>
                                 <li><p>You can always decline to deliver</p></li>
+                                </div>
                                 <div class="custom-controls-stacked d-block my-3">
                                     <label class="custom-control custom-radio">
-                                        <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                        <input id="radio1" name="radio-stacked" type="radio" class="custom-control-input" required>
                                             <span class="custom-control-indicator"></span>
                                             <span class="custom-control-description">No</span>
                                             </label>
                                     <br>
                                     <label class="custom-control custom-radio">
-                                        <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                        <input id="radio2" name="radio-stacked" type="radio" class="custom-control-input" required>
                                             <span class="custom-control-indicator"></span>
                                             <span class="custom-control-description">Yes, if I am available and it is close in proximity</span>
                                             </label>
                                     </div>
-                                </div>
+                                
                             <div>
+                                <br>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" required>
                                         <span class="custom-control-indicator"></span>
                                         <span class="custom-control-description">I agree to the Terms and Conditions</span>
                                         </label>
+                                <br>
                                 <br>
                             <div class-"center-block">
                                 <button type="submit" class="btn btn-primary col-md-3 col-md-offset-2">Lease Your Bike!</button>
@@ -318,7 +317,7 @@
                             
                         </form>
                         </div>
-                        <div class="col-md-4 col-md-offset-0" alignment="center">
+                        <div class="col-md-5 col-md-offset-0" alignment="center">
                             <h3><b>Frequently Asked Questions for Leasers</b></h3>
                             <h3>Q: Lorem ipsum</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies tellus diam, quis cursus enim consequat et. Integer dapibus enim id lectus iaculis, at dapibus arcu hendrerit. Proin non bibendum mi, quis tempor urna. In et tincidunt leo, sit amet feugiat lorem. Etiam in aliquet odio, id accumsan ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at egestas leo.</p>
