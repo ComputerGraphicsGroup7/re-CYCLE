@@ -16,11 +16,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
         <style>
             
-            /*change input text fields to grey shade color*/
-            .form-control{
-                background-color: rgba(223,223,223,0.5);
-                color:#000;
-            }
+        /*change input text fields to grey shade color*/
+        .form-control{
+            background-color: rgba(223,223,223,0.5);
+            color:#000;
+        }
         
         /* changes the print color to our green as user types in their information */
         
@@ -77,22 +77,28 @@
             box-sizing: border-box;
         }
         
-        div.gallery:hover .image {
+        .gallery:hover .image {
             opacity: 0.2;
         }
         
-        div.gallery:hover .middle {
+        .gallery:hover .middle {
             opacity: 5;
         }
 
+/*
         .middle {
             transition: .5s ease;
             opacity: 0;
             position: absolute;
-            top: 85%;
-            left: 25%;
+            top: 40%;
+            left: 6%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%)
+        }
+  */
+        
+        body{
+              font-family: "Raleway";
         }
         
         .text {
@@ -132,54 +138,7 @@
     </head>
     
     <body>
-       <!-- /container --><!-- Modal -->
-
-	   
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-header" style="text-align:center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h2 class="modal-title" id="exampleModalLongTitle">Sign In</h2>
-                <h5> Sign into your account to rent a bike!</h5>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">Username/Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                </div>
-                    </div>
-                </form>
-                
-            </div>
-            <div class="modal-footer" style="text-align:center">
-                <button type="submit" class="btn btn-success btn-md" border radius = 25px >Sign In</button>
-                <!--NOTE change the link here to take you to the Sign Up page -->
-                <h5>Don't have an account? Sign up <a href="http://ww.yahoo.com?"> here! </a></h5>
-            </div>
-        </div>
-    </div>
-</div>
-
-        
-        <script>
-		$(document).ready(function(){
-				$("#myBtn").click(function(){
-						$("#myModal").modal();
-				});
-		});
-        </script>
-        
+ 
         <!-- navigation bar -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -196,7 +155,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class= "navbar-brand" href="about-us.html">About</a></li>
                         <li><a class= "navbar-brand" href="lease-form.html">Owner</a></li>
-                        <li><a class= "navbar-brand" href="SignIn.html"><span id="myBtn">Sign in</span></a></li>
+                        <li><a class= "navbar-brand"><span id="myBtn">Sign in</span></a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -205,6 +164,7 @@
         <br>
         <br>
         <br>
+        
 
         <!-- Search Bar at the top of page for users to enter destination, start date and end date-->
         <div class = "row">
@@ -241,47 +201,36 @@
             </div>
         </div>
         
-        <!-- Gallery of bike images available for rent -->
+        <!-- Gallery of the bike images available for rent -->
        
            <div class="responsive" >
                <div class="gallery">
+                
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike"  class="image" width="300" height="200">
-                        <div class="middle">
+                   </a>
+                     <div class="middle">
                             <div class="text">
                                 <p>Title Of Bike</p>
                                 <p>Model - $Hourly Price</p>
                             </div>
-                        </div>
+                       </div>
+                 
+                </div>
+             
+           </div>
+           
+           <div class="responsive">
+               <div class="gallery">
+                   <a target="_blank" href="img_fjords.jpg">
+                       <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
                    </a>
-               </div>
-           </div>
-           
-           <div class="responsive">
-               <div class="gallery">
-                   <a target="_blank" href="img_fjords.jpg">
-                       <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                        <div class="middle">
-                               <div class="text">
-                                <p>Title Of Bike</p>
-                                <p>Model - $Hourly Price</p>
-                            </div>
+                   <div class="middle">
+                        <div class="text">
+                            <p>Title Of Bike</p>
+                            <p>Model - $Hourly Price</p>
                         </div>
-                   </a>
-               </div>
-           </div>
-           
-           <div class="responsive">
-               <div class="gallery">
-                   <a target="_blank" href="img_fjords.jpg">
-                       <img src="bike2.jpg" alt="Bike" class="image"width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
-                           </a>
+                    </div>
                </div>
            </div>
            
@@ -289,13 +238,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -303,13 +252,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -317,13 +266,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -331,13 +280,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -345,13 +294,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -359,13 +308,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -373,13 +322,13 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -387,13 +336,27 @@
                <div class="gallery">
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
                            </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="responsive">
+               <div class="gallery">
+                   <a target="_blank" href="img_fjords.jpg">
+                       <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
+                           </a>
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
            
@@ -402,13 +365,12 @@
                    <a target="_blank" href="img_fjords.jpg">
                        <img src="bike2.jpg" alt="Bike" class="image" width="300" height="200">
                     </a>
-                           <div class="middle">
-                               <div class="text">
-                                   <p>Title Of Bike</p>
-                                   <p>Model - $Hourly Price</p>
-                               </div>
-                           </div>
-                           
+                   <div class="middle">
+                       <div class="text">
+                           <p>Title Of Bike</p>
+                           <p>Model - $Hourly Price</p>
+                       </div>
+                   </div>
                </div>
            </div>
 
