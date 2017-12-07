@@ -207,13 +207,24 @@
                     <h3><b>Insurance Disclaimer</b></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies tellus diam, quis cursus enim consequat et. Integer dapibus enim id lectus iaculis, at dapibus arcu hendrerit. Proin non bibendum mi, quis tempor urna. In et tincidunt leo, sit amet feugiat lorem. Etiam in aliquet odio, id accumsan ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at egestas leo.</p>
                     
-                    <h2><b>Grand Total</b></h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2><b>Grand Total</b></h2>
+                            </div>
+                        <div class="list-inline col-md-6" align="right">
+                            <li><h3>= $</h3></li>
+                            <li><h3 id="sub_1">0</h3></li>
+                            <li><h3> + $</h3></li>
+                            <li><h3 id="sub_2">0</h3></li>
+                            </div>
+                        </div>
                     <div class="list-inline" align="right">
-                        <li><h2>$</h2></li>
+                        <li><h2>= $</h2></li>
                         <li><h2 id = "total">0</h2></li>
-                    </div>
+                        </div>
                     </form>
                     </div>
+            <br>
             <div class="col-md-6">
                 <img class="img-square" src="bike2.jpg" alt="bikeImage" width="100%" height="100%">
                 
@@ -296,6 +307,7 @@
                 document.getElementById("dayRent").innerHTML = dC;
                 document.getElementById("weekRent").innerHTML = wC;
                 document.getElementById("sub1").innerHTML = subtot1;
+                document.getElementById("sub_1").innerHTML = subtot1;
             }
         
             function subtotal2(){
@@ -307,6 +319,7 @@
                 if(helmet.checked){hYes = 8;}
                 subtot2=lYes+hYes;
                 document.getElementById("sub2").innerHTML = subtot2;
+                document.getElementById("sub_2").innerHTML = subtot2;
             
             }
         
