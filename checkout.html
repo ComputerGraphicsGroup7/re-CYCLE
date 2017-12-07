@@ -146,6 +146,7 @@
                 <form class="was-validated">
                     <h2><b>Title of Bike</b></h2>
                     <h3><b>From: [Owner username]</b></h3>
+                    <!-- Rental period price calculation -->
                     <h5>I would like to rent the bike for...</h5>
                     <div class="list-inline">
                         <div class="form group col-xs-4">
@@ -178,8 +179,8 @@
                     </div>
                     <button type="button" onclick="subtotal1(); total();">Rent Subtotal</button>
                     
-                    
-                    <h3><b>Any Accesories?</b></h3>
+                    <!-- Accessories calculation -->
+                    <h3><b>Any Accessories?</b></h3>
                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-center">
                         <div class="form-group">
                             <input type="checkbox" name="ride[extras][]" id="ride_extras_lock" value="Lock" class="icon-circle-border-input">
@@ -207,6 +208,7 @@
                     <h3><b>Insurance Disclaimer</b></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies tellus diam, quis cursus enim consequat et. Integer dapibus enim id lectus iaculis, at dapibus arcu hendrerit. Proin non bibendum mi, quis tempor urna. In et tincidunt leo, sit amet feugiat lorem. Etiam in aliquet odio, id accumsan ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at egestas leo.</p>
                     
+                    <!-- Final cost calculation -->
                     <div class="row">
                         <div class="col-md-6">
                             <h2><b>Grand Total</b></h2>
@@ -227,7 +229,7 @@
             <br>
             <div class="col-md-6">
                 <img class="img-square" src="bike2.jpg" alt="bikeImage" width="100%" height="100%">
-                
+            <!-- Calendar -->
                 <div class="month"> 
                     <ul>
                         <li>
@@ -279,9 +281,6 @@
                     <li>29</li>
                     <li>30</li>
                     <li>31</li>
-
-
-                
                 </ul>
            
             </div>
@@ -292,6 +291,11 @@
         
         
         <script>
+            
+            /*
+             Mainly calculations for totals used in determining costs
+             */
+            
             var subtot1 = 0;
             var subtot2 = 0;
             
