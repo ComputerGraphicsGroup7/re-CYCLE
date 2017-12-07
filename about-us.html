@@ -53,7 +53,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class= "navbar-brand" href="about-us.html">About</a></li>
 					<li><a class= "navbar-brand" href="lease-form.html">Owner</a></li>
-					<li><a class= "navbar-brand" href="SignIn.html"><span id="myBtn">Sign in</span></a></li>
+					<li><a data-toggle="modal" data-target="#myModal" href="#">ABOUT</a></li>
 				</ul>
 			</div> <!--/.nav-collapse -->
 		</div>
@@ -98,6 +98,15 @@
 		</div>
     	</div>
 
+	<script>
+		$(document).ready(function(){
+				$("#myBtn").click(function(){
+						$("#myModal).modal();
+				});
+		});
+
+	</script>
+	
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
