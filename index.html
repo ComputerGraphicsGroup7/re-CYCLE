@@ -176,6 +176,7 @@
 		<![endif]-->
 	</head>
 	<body>
+		<!-- Bootstrap Navbar with modificaitons -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -198,54 +199,54 @@
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
+		<!-- Master container-->
 		<div class="container">
 		<br>
 		<br>
 		<br>
 
-			<!-- Main component for a primary marketing message or call to action -->
 			
+				<!-- container for the elements below the navbar -->
 				<div class="container">
-					 <!-- Three columns of text below the carousel -->
+						<!-- 1Row -->
 						<div class="row">
+							<!-- main photo on the lefthand side -->
 							<div class="col-xs-6" id="leftSide" >
 							<img class="img-square-large"  src="Cropped2.jpg" alt="Generic placeholder image" width="100%" height="639">
 							<div class="centered"><h10>re:CYCLE</h10></div>
-						</div><!-- /.col-lg-4 -->
+						</div>
+						<!-- 2Row Righthand side -->
 						<div class="row">
+							<!-- First column on right side -->
 							<div class="col-md-6">
 								<h1 align="center">START YOUR JOURNEY</h1>
 								<form role="form" action="BikeListings.html">
 								<div class="col-xs-12">
 									<div class="form-group">
-										
+										<!-- input for search -->
 										<input type="search" class="form-control" id="myText" placeholder="City of Interest">
 									</div>
-									</div>
-									<div class="col-xs-6">
+								</div>
+								<div class="col-xs-6">
 									<div class="form-group">
-										
+										<!-- For date search -->
 										<input type="date" class="form-control" id="date1" placeholder="Start Date">
 									</div>
-									</div>
-									<div class="col-xs-6">
+								</div>
+								<div class="col-xs-6">
 									<div class="form-group">
-										
+										<!-- For date search -->
 										<input type="date" class="form-control" id="date2" placeholder="End Date">
 									</div>
-									</div>
-									<div class="col-xs-12 center-block">
-										<button id="searchButton" type="submit" href="BikeListings.html" class="btn btn-success center-block">Search!</button>
-									</div>
-
-									
-								
-								</form>
-								
-								<h2 align="center" >Popular Cities</h2>
-								
-								
-								<div class="col-xs-6" align="center" id="leftPics">
+								</div>
+								<div class="col-xs-12 center-block">
+									<button id="searchButton" type="submit" href="BikeListings.html" class="btn btn-success center-block">Search!</button>
+								</div>
+							</form>
+							<!-- Header for next section -->
+							<h2 align="center">Popular Cities</h2>
+							<!-- Photos on the left -->	
+							<div class="col-xs-6" align="center" id="leftPics">
 								<div class="containerPhoto">
 									<img class="img-square" src="S22-eventpage-portland.png" alt="Generic placeholder image" width="100%" height="200">
 									<div class="middlePhoto">
@@ -255,15 +256,13 @@
 								</div>
 								<div class="containerPhoto">
 									<img class="img-square" src="New York.jpg" alt="Generic placeholder image" width="100%" height="200">
-								<div class="middlePhoto">
-									<div onclick="NewYork()" class="textPhoto">New York</div>
+									<div class="middlePhoto">
+										<div onclick="NewYork()" class="textPhoto">New York</div>
+									</div>
 								</div>
 							</div>
-
-
-								</div><!-- /.col-lg-4 -->
-								
-								<div class="col-xs-6" align="center" id="rightPics">
+							<!-- Photos on the right -->
+							<div class="col-xs-6" align="center" id="rightPics">
 								<div class="containerPhoto">
 									<img class="img-square" src="testImage3.jpeg" alt="Generic placeholder image" width="100%" height="200" >
 									<div class="middlePhoto">
@@ -279,18 +278,13 @@
 										<div onclick="London()" class="textPhoto">London</div>	
 									</div>
 								</div>
-
-									
-									
-
-
-								</div><!-- /.col-lg-4 -->
-								</div>
-							</div><!-- /.row -->
-						</div><!-- /.row -->
-
+								
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.row -->
 			</div>
-	</div> 
+		</div> 
 	<!-- /container --><!-- Modal -->
 		
         <!--<div class="modal fade" id="myModal" role="dialog">-->
@@ -380,13 +374,13 @@
                         $("#myModal").modal();
                     });
                 });
-            
+           /*Summon modal*/
                 $(document).ready(function(){
                       $("#myBtn2").click(function(){
                             $("#myModal2").modal();
                        });
                 });
-        
+        	/*Fill in text funcitons for each hover on each image*/
 		function Portland() {
 			document.getElementById("myText").value = "Portland";
 		}
@@ -399,13 +393,14 @@
 		function Paris() {
 			document.getElementById("myText").value = "Paris";
 		}
+		/*Check if user hits "enter" to go to the next page*/
 		var variable = document.getElementsByTagName("BODY")[0];
 		variable.addEventListener("keydown", function (e) {
-			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+			if (e.keyCode === 13) {  
 				validate(e);
 			}
 		});
-
+		/*Nagigates to next page*/
 		function validate(e) {
 			var text = e.target.value;
 			document.location.href = "BikeListings.html";
@@ -414,7 +409,7 @@
 
 		
 		
-				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bootstrap.min.js"></script>
