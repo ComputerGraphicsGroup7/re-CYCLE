@@ -106,7 +106,7 @@
 				opacity: 0;
 				position: absolute;
 				top: 50%;
-				left: 32%;
+				left: 50%;
 				padding-left: -0px;
 				padding-top: 5px;
 				padding-right: 0px;
@@ -198,7 +198,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<h1 align="center">START YOUR JOURNEY</h1>
-								<form role="form">
+								<form role="form" action="bikeListing.html>
 								<div class="col-xs-12">
 									<div class="form-group">
 										
@@ -218,7 +218,7 @@
 									</div>
 									</div>
 									<div class="col-xs-12 center-block">
-										<button id="singlebutton" name="singlebutton" class="btn btn-success center-block" >Next Step!</button>
+										<button id="searchButton" type="submit" href="bikeListing.html" class="btn btn-success center-block">Search!</button>
 									</div>
 
 									
@@ -232,14 +232,14 @@
 								<div class="containerPhoto">
 									<img class="img-square" src="S22-eventpage-portland.png" alt="Generic placeholder image" width="120%" height="200">
 									<div class="middlePhoto">
-										<div onclick="myFunction()" class="textPhoto">Portland</div>
+										<div onclick="Portland()" class="textPhoto">Portland</div>
 									
 									</div>
 								</div>
 								<div class="containerPhoto">
-									<img class="img-square" src="testImage3.jpeg" alt="Generic placeholder image" width="100%" height="200">
+									<img class="img-square" src="New York.jpg" alt="Generic placeholder image" width="100%" height="200">
 								<div class="middlePhoto">
-									<div class="textPhoto">Portland</div>
+									<div onclick="NewYork()" class="textPhoto">New York</div>
 								</div>
 							</div>
 
@@ -248,18 +248,18 @@
 								
 								<div class="col-xs-6" align="center" id="rightPics">
 								<div class="containerPhoto">
-									<img class="img-square" src="testImage3.jpeg" alt="Generic placeholder image" width="100%" height="200" >
+									<img class="img-square" src="Paris.jpg" alt="Generic placeholder image" width="100%" height="200" >
 									<div class="middlePhoto">
-										<div class="textPhoto">Portland</div>
+										<div onclick="Paris()" class="textPhoto">Paris</div>
 									</div>
 								</div>
 
 									
 									
 								<div class="containerPhoto">
-									<img class="img-square" src="S22-eventpage-portland.png" alt="Generic placeholder image" width="100%" height="200">
+									<img class="img-square" src="London.jpg" alt="Generic placeholder image" width="100%" height="200">
 									<div class="middlePhoto">
-										<div class="textPhoto">Portland</div>
+										<div onclick="London()" class="textPhoto">London</div>	
 									</div>
 								</div>
 
@@ -319,11 +319,20 @@
 						$("#myModal").modal();
 				});
 		});
-		function myFunction() {
+		function Portland() {
 			document.getElementById("myText").value = "Portland";
 		}
-		var wage = document.getElementsByTagName("BODY")[0];
-		wage.addEventListener("keydown", function (e) {
+		function NewYork() {
+			document.getElementById("myText").value = "New York";
+		}
+		function London() {
+			document.getElementById("myText").value = "London";
+		}
+		function Paris() {
+			document.getElementById("myText").value = "Paris";
+		}
+		var variable = document.getElementsByTagName("BODY")[0];
+		variable.addEventListener("keydown", function (e) {
 			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
 				validate(e);
 			}
@@ -331,7 +340,7 @@
 
 		function validate(e) {
 			var text = e.target.value;
-			document.location.href = "test.html";
+			document.location.href = "bikeListing.html";
 		}
 		</script>
 
