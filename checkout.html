@@ -12,6 +12,69 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
         <style>
+        ul {list-style-type: none;}
+        body {font-family: Verdana, sans-serif;}
+        
+        
+        /* The CSS and HTML for the calendar was taken from W3Schools and can be found on their website*/
+        /* Month header */
+        .month {
+            padding: 20px 25px;
+            width: 100%;
+            background: rgb(88,143,39);
+            text-align: center;
+        }
+
+        /* Month list */
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .month ul li {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Weekdays (Mon-Sun) */
+        .weekdays {
+            margin: 0;
+            padding: 10px 0;
+            background-color:#ddd;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Days (1-31) */
+        .days {
+            padding: 10px 0;
+            background: #eee;
+            margin: 0;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size:12px;
+            color:#777;
+        }
+
+        /* Highlight the "current" day */
+        .days li .active {
+            padding: 5px;
+            background: rgb(88,143,39);
+            color: white !important
+        }
             .modal-header, h4, .close {
                 background-color: #5cb85c;
                 color:white !important;
@@ -150,6 +213,62 @@
                     </div>
             <div class="col-md-6">
                 <img class="img-square" src="bike2.jpg" alt="bikeImage" width="100%" height="100%">
+                
+                <div class="month"> 
+                    <ul>
+                        <li>
+                            December<br>
+                            <span style="font-size:18px">2017</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                </ul>
+
+                <ul class="days"> 
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</10>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li><span class="active">18</span></li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+
+
+                
+                </ul>
            
             </div>
         </div>
@@ -187,14 +306,6 @@
                 document.getElementById("sub2").innerHTML = subtot2;
             
             }
-        
-            /* an attempt to ensure user is actually renting the bike
-             
-            function priceCheck(){
-                if(subtot1==0)
-                    
-            }*/
-        
         
             function total(){
                 document.getElementById("total").innerHTML=subtot1+subtot2;
