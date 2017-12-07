@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             
-        <title> Leasing Your Bike </title>
+        <title> Search Results </title>
         <link href="bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -160,39 +160,37 @@
 
         <!-- Search Bar at the top of page for users to enter destination, start date and end date-->
         <div class = "container">
-        <div class = "row">
-            <div class = "col-md-12">
-            <form role="form" >
-                <div class = "col-xs-6">
-                       <div class="form-group">
+            <div class = "row">
+                <form>
+                    <div class = "col-xs-6">
+                        <div class="form-group">
                            <label class="sr-only" for="CityOfInterest">Destination</label>
                            <input type="text" class="form-control" id="CityOfInterest" placeholder="City of Interest">
+                           </div>
                         </div>
-                </div>
-                   <div class = "col-xs-2">
-                        <div class="form-group">
-                            <label class="sr-only" for="StartDate">Start Date</label>
-                            <input type="date" class="form-control" id="startDate" placeholder="Start Date">
+                        <div class = "col-xs-2">
+                            <div class="form-group">
+                                <label class="sr-only" for="StartDate">Start Date</label>
+                                <input type="date" class="form-control" id="startDate" placeholder="Start Date">
+                                </div>
+                            </div>
                        
-                        </div>
-                    </div>
+                    <div class = "col-xs-2">
+                            <div class="form-group">
+                                <label class="sr-only" for="End Date">End Date</label>
+                                <input type="date" class="form-control" id="startDate" placeholder="End Date">
+                                </div>
+                            </div>
+                    
+                    <div class = "col-xs-2s">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Search!</button>
+                                </div>
+                            </div>
                    
-                <div class = "col-xs-2">
-                        <div class="form-group">
-                            <label class="sr-only" for="End Date">End Date</label>
-                            <input type="date" class="form-control" id="startDate" placeholder="End Date">
-                        </div>
-                    </div>
-                
-                <div class = "col-xs-1">
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-success">Search!</button>
-                        </div>
-                    </div>
+                </form>
                 </div>
-            </form>
             </div>
-        </div>
         </div>
         
         <!-- Gallery of the bike images available for rent -->
