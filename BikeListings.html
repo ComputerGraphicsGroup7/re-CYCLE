@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
             
         <title> Search Results </title>
         <link href="bootstrap.css" rel="stylesheet">
@@ -109,6 +108,16 @@
             width: 24.99999%;
         }
         
+        .btn{
+            background-color:rgb(88,143,39);
+            border-color:rgb(88,143,39);
+            position:relative; center:0;
+        }
+        .btn:hover{
+            background-color:rgb(88,130,42);
+            border-color:rgb(88,143,39);
+        }
+        
         @media only screen and (max-width: 700px){
             .responsive {
                 width: 49.99999%;
@@ -154,46 +163,6 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        
-        <br>
-        <br>
-        <br>
-        
-
-        <!-- Search Bar at the top of page for users to enter destination, start date and end date-->
-        <div class = "container">
-            <div class = "row">
-                <form>
-                    <div class = "col-md-7">
-                        <div class="form-group">
-                           <label class="sr-only" for="CityOfInterest">Destination</label>
-                           <input type="text" class="form-control" id="CityOfInterest" placeholder="City of Interest">
-                           </div>
-                        </div>
-                        <div class = "col-xs-2">
-                            <div class="form-group">
-                                <label class="sr-only" for="StartDate">Start Date</label>
-                                <input type="date" class="form-control" id="startDate" placeholder="Start Date">
-                                </div>
-                            </div>
-                       
-                    <div class = "col-xs-2">
-                            <div class="form-group">
-                                <label class="sr-only" for="End Date">End Date</label>
-                                <input type="date" class="form-control" id="startDate" placeholder="End Date">
-                                </div>
-                            </div>
-                    
-                    <div class = "col-xs-1">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success">Search!</button>
-                                </div>
-                            </div>
-                   
-                </form>
-                </div>
-            </div>
-        </div>
         
         <!-- /container --><!-- Modal -->
         
@@ -276,8 +245,44 @@
             </div>
         </div>
         
-        <!-- Gallery of the bike images available for rent -->
+        
+        
+        
+        <!-- Search Bar at the top of page for users to enter destination, start date and end date-->
+        
         <div class = "container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class = "row">
+                <form>
+                    <div class = "col-md-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="CityOfInterest" placeholder="City of Interest">
+                                </div>
+                    </div>
+                    <div class = "col-sm-2">
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="startDate" placeholder="Start Date">
+                                </div>
+                    </div>
+                    
+                    <div class = "col-sm-2">
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="endDate" placeholder="End Date">
+                                </div>
+                    </div>
+                    
+                    <div class = "col-sm-1">
+                        <div class="form-group">
+                            <button type="submit" class="btn">Search!</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        <!-- Gallery of the bike images available for rent -->
             <div class="responsive" >
                 <div class="gallery">
                     
