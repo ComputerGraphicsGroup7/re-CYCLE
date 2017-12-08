@@ -25,11 +25,6 @@
                 color:#000;
             }
         
-            /*The green color based on design*/
-            .btn{
-                background-color: rgb(88,143,39);
-            }
-        
             /*The following controls the class "gallery" characteristics. The gallery class contains all the images seen on the page.*/
             div.gallery {
                 border: 2px solid #ccc;
@@ -46,14 +41,17 @@
                 box-sizing: border-box;
             }
         
+	    /*To give the images a slight shade when hovering over them so the user knows what they're going to select*/
             .gallery:hover .image {
                 opacity: 0.2;
             }
         
+	    /*Fixes how the text that shows over the images will look like*/
             .gallery:hover .middle {
                 opacity: 5;
             }
-		
+	
+	    /*modal property modifications*/
 	    .modal-header, h4, .close {
 		    background-color: #5cb85c;
 		    color:white !important;
@@ -65,10 +63,12 @@
             	background-color: #f9f9f9;
             }
 
+	    /*Setting the font of our body to our website theme font so the entire page has the same font*/
             body{
                   font-family: "Raleway";
             }
         
+	    /*text property modifications for where the user types in information*/
             .text {
                 background-color: opaque;
                 color: rgb(88,143,39);
@@ -76,18 +76,22 @@
                 padding: 8px 5px;
             }
         
+	    /*Making the page responsive*/
             .responsive {
                 padding: 0 4px;
                 padding-bottom: 10px;
                 float: left;
                 width: 24.99999%;
             }
-        
+	    
+	    /*setting characteristics of our button. Green color based on our theme-design color*/
             .btn{
                 background-color:rgb(88,143,39);
                 border-color:rgb(88,143,39);
                 position:relative; center:0;
             }
+		
+	    /*Changes shade of button when hovered over*/
             .btn:hover{
                 background-color:rgb(88,130,42);
                 border-color:rgb(88,143,39);

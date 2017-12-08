@@ -1,3 +1,5 @@
+<!--Code for the basic structure of the sign-up modal. Only the body will be used in the other files.-->
+<!--The body has been copied and pasted in to all the page files in our website.-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,47 +19,46 @@
     
     <body>
     
-        <!-- This button will be replaced by the one in the navigation bar--> 
-        <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#myModal">Sign Up</button>
+    <!--Tester Button for the modal when the modal isn't connected to the sign in the nav bar-->
+    <!--<button type="button" class="btn btn-success" data-toggle="modal"  data-target="#myModal">Sign In</button>-->
         
-        <!-- Small modal (Can change later as needed) -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-header" style="text-align:center">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <h2 class="modal-title" id="exampleModalLongTitle">Sign Up</h2>
-                        <h5> Create an account to access bikes!</h5>
+                        <h2 class="modal-title" id="exampleModalLongTitle"><b>Sign Up</b></h2>
+                        <h6> Create an account to access bikes!</h6>
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal">
-                            <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-3 control-label">Email </label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            <div class="form-group" >
+                                <label for="inputEmail" class="col-sm-3 control-label">Email </label>
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                                         </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            <div class="form-group" >
+                                <label for="inputPassword" class="col-sm-4 control-label">Password</label>
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                                         </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm control-label">&nbsp; &nbsp; Confirm Password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                </div>
+                            <div class="form-group" >
+                                <label for="inputPassword" class="col-sm control-label">&nbsp; &nbsp; Confirm Password </label>
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                        </div>
                             </div>
                         </form>
                         
                     </div>
                     <div class="modal-footer" style="text-align:center">
                         <button type="submit" class="btn btn-success btn-md" border radius = 25px >Sign Up</button>
-                        <!--NOTE change the link here to take you to the Sign In page -->
-                        <h5>Already have an account? Sign in <a href="http://ww.yahoo.com?"> here! </a></h5>
+                       <!--Link here takes you to the sign in page-->
+                        <h6>Already have an account? <a><span id="myBtn3">Sign in</span></a></h6>
                     </div>
                 </div>
             </div>
