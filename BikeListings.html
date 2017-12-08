@@ -148,7 +148,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <h2 class="modal-title" id="exampleModalLongTitle">Sign In</h2>
+			    <h2 class="modal-title" id="exampleModalLongTitle"><b>Sign In</b></h2>
                         <h6> Sign into your account to rent a bike!</h6>
                     </div>
                     <div class="modal-body">
@@ -183,7 +183,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <h2 class="modal-title" id="exampleModalLongTitle">Sign Up</h2>
+			    <h2 class="modal-title" id="exampleModalLongTitle"><b>Sign Up</b></h2>
                         <h6> Create an account to access bikes!</h6>
                     </div>
                     <div class="modal-body">
@@ -212,28 +212,42 @@
                     <div class="modal-footer" style="text-align:center">
                         <button type="submit" class="btn btn-success btn-md" border radius = 25px >Sign Up</button>
                        <!--Link here takes you to the sign in page-->
-                        <h6>Already have an account? <a><span id="myBtn">Sign in</span></a></h6>
+                        <h6>Already have an account? <a><span id="myBtn3">Sign in</span></a></h6>
                     </div>
                 </div>
             </div>
         </div>
 	 
-	<!--to navigate what modal the user goes to when clicking on Sign In and Sign Up-->
-	<script>
-	        /*Summoning the modal*/        
-		$(document).ready(function(){
+        <!--to navigate what modal the user goes to when clicking on Sign In and Sign Up-->
+        <script>
+		/*myBtn: summons sign in page*/
+            	$(document).ready(function(){
                     $("#myBtn").click(function(){
                         $("#myModal").modal();
                     });
-		
-                });
-            
-                $(document).ready(function(){
+         
+            	});
+            	/*myBtn2: summons sign up page and closes the sign in page*/
+            	$(document).ready(function(){
                       $("#myBtn2").click(function(){
-                            $("#myModal2").modal();
-                       });
-                });
-        
+                           $("#myModal2").modal();
+                      });
+                              
+                      $("#myBtn2").click(function(){
+                            $("#myModal").modal('hide');
+                      });
+           	});
+           	/*myBtn3: resummons the sign in page, but closes the sign up page*/
+           	$(document).ready(function(){
+                             
+                    	$("#myBtn3").click(function(){
+                       		$("#myModal").modal();
+                   	 });
+                             
+                    	$("#myBtn3").click(function(){
+                       		$("#myModal2").modal('hide');
+                    	});
+           	});
 	</script>
        
         <div class = "container">
