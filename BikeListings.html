@@ -92,6 +92,17 @@
             .gallery:hover .middle {
                 opacity: 5;
             }
+		
+	    .modal-header, h4, .close {
+		    background-color: #5cb85c;
+		    color:white !important;
+		    text-align: center;
+		    font-size: 30px;
+            }
+		
+            .modal-footer {
+            	background-color: #f9f9f9;
+            }
 
             body{
                   font-family: "Raleway";
@@ -247,8 +258,22 @@
                 </div>
             </div>
         </div>
+	
+	<script>
+	                
+		$(document).ready(function(){
+                    $("#myBtn").click(function(){
+                        $("#myModal").modal();
+                    });
+                });
+            
+                $(document).ready(function(){
+                      $("#myBtn2").click(function(){
+                            $("#myModal2").modal();
+                       });
+                });
         
-        
+	</script>
         
         
         <!-- Search Bar at the top of page for users to enter destination, start date and end date-->
