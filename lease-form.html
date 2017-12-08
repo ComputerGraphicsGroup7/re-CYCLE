@@ -79,11 +79,12 @@
                         <li><a class= "navbar-brand" href="lease-form.html">Owner</a></li>
                         <li><a class= "navbar-brand"><span id="myBtn">Sign in</span></a></li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
+		<!--/.nav-collapse -->
             </div>
         </nav>
         
-        <!--Sign and Sign Up Modals -->
+        <!--Sign In and Sign Up Modals -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
@@ -160,26 +161,6 @@
                 </div>
             </div>
         </div>
-        
-        
-       <!--to navigate what modal the user goes to when clicking on Sign In and Sign Up--> 
-	   <script>
-           
-	 
-            $(document).ready(function(){
-                    $("#myBtn").click(function(){
-                        $("#myModal").modal();
-                    });
-            });
-            
-             $(document).ready(function(){
-                     $("#myBtn2").click(function(){
-                            $("#myModal2").modal();
-                     });
-            });
-        
-        
-        </script>
 
         <div class="container">
             <br>
@@ -471,7 +452,21 @@
             </div>
         </div>
         
-        <script>
+       <!--to navigate what modal the user goes to when clicking on Sign In and Sign Up--> 
+       <script>
+
+            $(document).ready(function(){
+                    $("#myBtn").click(function(){
+                        $("#myModal").modal();
+                    });
+            });
+            
+             $(document).ready(function(){
+                     $("#myBtn2").click(function(){
+                            $("#myModal2").modal();
+                     });
+            });
+	       
             $(document).ready(function(){
                               $('[data-toggle="tooltip"]').tooltip();
                               });
@@ -481,7 +476,7 @@
                               $("#myModal").modal();
                               });
             });
-            </script>
+        </script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
