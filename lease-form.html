@@ -53,10 +53,28 @@
             custom-control-input{
                 margin-left: 10px;
             }
-        .h1, h1{
-            color:rgb(88,143,39);
-        }
-
+		
+            .h1, h1{
+            	color:rgb(88,143,39);
+            }
+		
+            /*Changes the placedholder text to our green*/
+            input::-webkit-input-placeholder {
+                color: rgb(88,143,39) !important;
+            }
+        
+            input:-moz-placeholder { /* Firefox 18- */
+                color: rgb(88,143,39) !important;
+            }
+        
+            input::-moz-placeholder {  /* Firefox 19+ */
+                color: rgb(88,143,39) !important;
+            }
+        
+            input:-ms-input-placeholder {
+                color: rgb(88,143,39) !important;
+            }
+        
             </style>
     </head>
     <body>
@@ -82,7 +100,7 @@
             </div>
         </nav>
         
-                <!--Sign and Sign Up Modals -->
+        <!--Sign and Sign Up Modals -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
